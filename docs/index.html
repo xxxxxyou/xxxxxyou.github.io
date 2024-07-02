@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="en">
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="content-type" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -57,7 +57,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <h1>
     <img src="https://github.githubassets.com/favicons/favicon.svg" class="avatar circle" id="avatarImg" alt="avatar"><a class="blogTitle">黔灵小游的BLOG</a></h1>
 <div class="title-right">
-    <a href="https://xxxxxyou.github.io/tag.html" id="buttonSearch" class="btn btn-invisible circle" title="搜索">
+    <a href="https://xxxxxyou.github.io/tag.html" id="buttonSearch" class="btn btn-invisible circle" title="Search">
         <svg class="octicon" width="16" height="16" >
             <path id="pathSearch" fill-rule="evenodd"></path>
         </svg>
@@ -69,7 +69,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
             <path id="pathRSS" fill-rule="evenodd"></path>
         </svg>
     </a>
-    <a class="btn btn-invisible circle" onclick="modeSwitch()" title="切换主题">
+    <a class="btn btn-invisible circle" onclick="modeSwitch()" title="switch theme">
         <svg class="octicon" width="16" height="16" >
             <path id="themeSwitch" fill-rule="evenodd"></path>
         </svg>
@@ -87,19 +87,8 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     </div>
     <div class="listLabels">
         
-        <span class="Label LabelName" style="background-color:"><object><a style="color:#fff" href="tag.html#オタク">オタク</a></object></span>
+        <span class="Label LabelName" style="background-color:#006b75"><object><a style="color:#fff" href="tag.html#オタク">オタク</a></object></span>
         <span class="Label LabelTime" style="background-color:#bc4c00">2024-07-03</span>
-    </div>
-</a><a class="SideNav-item d-flex flex-items-center flex-justify-between" href="post/TEST.html">
-    <div class="d-flex flex-items-center">
-        <svg class="SideNav-icon octicon" style="witdh:16px;height:16px"><path class="svgTop0" d=""></path>
-        </svg>
-        <span class="listTitle">TEST</span>
-    </div>
-    <div class="listLabels">
-        
-        <span class="Label LabelName" style="background-color:#d73a4a"><object><a style="color:#fff" href="tag.html#bug">bug</a></object></span>
-        <span class="Label LabelTime" style="background-color:#bc4c00">2024-07-02</span>
     </div>
 </a>
 </nav>
@@ -116,8 +105,8 @@ if("07/02/2024"!=""){
     var diff=now.getTime()-startSite.getTime();
     var diffDay=Math.floor(diff/(1000*60*60*24));
     document.getElementById("year").innerHTML=now.getFullYear();
-    if(""!=""){document.getElementById("runday").innerHTML=" • "+"网站运行"+diffDay+"天"+" • ";}
-    else{document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";}
+    if(""!=""){document.getElementById("runday").innerHTML=" • "+"run "+diffDay+" days"+" • ";}
+    else{document.getElementById("runday").innerHTML="run "+diffDay+" days"+" • ";}
 }
 </script>
 </div>
